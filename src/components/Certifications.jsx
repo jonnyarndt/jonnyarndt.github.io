@@ -11,12 +11,27 @@ export default function Certifications({ certifications, education }) {
             Certifications
           </h3>
           <div className="space-y-3">
-            {certifications.map(({ name, issuer, icon }) => (
+            {certifications.map(({ name, issuer, icon, certificateId, date, url }) => (
               <div key={name} className="card flex items-start gap-4">
                 <span className="text-xl mt-0.5" aria-hidden="true">{icon}</span>
                 <div>
                   <p className="text-slate-100 font-medium">{name}</p>
-                  <p className="text-slate-500 text-sm">{issuer}</p>
+                  <p className="text-slate-500 text-sm">
+                    {url ? (
+                      <a href={url} target="_blank" rel="noopener noreferrer" className="hover:text-teal-400 transition-colors">
+                        {issuer}
+                      </a>
+                    ) : (
+                      issuer
+                    )}
+                  </p>
+                  {(certificateId || date) && (
+                    <p className="text-slate-600 text-xs mt-1">
+                      {certificateId && <span>ID: {certificateId}</span>}
+                      {certificateId && date && <span> · </span>}
+                      {date && <span>{date}</span>}
+                    </p>
+                  )}
                 </div>
               </div>
             ))}

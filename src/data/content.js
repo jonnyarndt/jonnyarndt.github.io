@@ -103,21 +103,43 @@ export const strengths = [
 
 export const certifications = [
   {
-    name: 'Crestron Masters — Silver',
+    name: 'Crestron Masters Certified Programmer - Gold',
     issuer: 'Crestron Electronics',
     icon: '🏅',
+    certificateId: 'CMCP-G-105-260306-01092',
+    date: 'March 2026',
+    url: 'https://www.crestron.com',
   },
+  {
+    name: 'Crestron Core Certification',
+    issuer: 'Crestron Electronics',
+    icon: '🏅',
+    certificateId: 'CCT-000-200829-6976',
+    date: 'May 2020',
+    url: 'https://www.crestron.com',
+  },  
   {
     name: 'DMC-D-4K',
     issuer: 'Crestron Electronics',
     icon: '📜',
+    certificateId: 'DMC-D-4K Certification',
+    date: 'February 2016',
+    url: 'https://www.crestron.com',
+  },  
+  {
+    name: 'Crestron Masters Certified Programmer - Silver',
+    issuer: 'Crestron Electronics',
+    icon: '🏅',
+    certificateId: 'CMCP-S-2100-110307-0489',
+    date: 'March 2011',
+    url: 'https://www.crestron.com',
   },
 ]
 
 export const education = [
   {
     institution: 'Everett Community College',
-    area: 'Computer Science',
+    area: 'General Associates',
     icon: '🎓',
   },
 ]
